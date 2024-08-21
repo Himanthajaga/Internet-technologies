@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form elements</title>
+  </head>
+  <body>
+    <h1>Form elements</h1>
+    <strong>==========1.Label</strong>
+    <br />
+    <label for="username">User Name:</label>
+    <hr />
+    <br />
+    <strong>==========2.Input=========</strong>
+    <br />
+    <p>=======Text input==============</p>
+    <label for="username">first Name:</label>
+    <input type="text" placeholder="Enter your first name" maxlength="10" />
+    <br />
+    <p>=======Number input==============</p>
+    <label for="age">Age:</label>
+    <input type="number" placeholder="Enter your age" value="18" />
+    <br />
+    <p>=======Passsword input==============</p>
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Enter your password" />
+    <br />
+    <p>=======Date input==============</p>
+    <label for="date">Date:</label>
+    <input type="date" placeholder="Enter your date" />
+    <br />
+    <p>===========Radio button=============</p>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="male" />
+    <label for="female">Female</label>
+    <input type="radio" name="gender" value="female" />
+    <label for="other">Other</label>
+    <input type="radio" name="gender" value="other" />
+    <br />
+    <p>===========Checkbox=============</p>
+    <label for="vehicle1">Car</label>
+    <input type="checkbox" name="vehicle1" value="Car" />
+    <label for="vehicle2">Bike</label>
+    <input type="checkbox" name="vehicle2" value="Bike" />
+    <label for="vehicle3">Boat</label>
+    <input type="checkbox" name="vehicle3" value="Boat" />
+    <br />
+    <p>===========File input=============</p>
+    <input type="file" name="myFile" />
+    <hr />
+    <br />
+    <strong>==========3.Text Area=========</strong>
+    <br />
+    <textarea
+      name="messege"
+      id="messege"
+      placeholder="Enter your messege"
+      rows="5"
+      cols="50"
+    ></textarea>
+    <hr />
+    <br />
+    <strong>==========4.Buttons=========</strong>
+    <br />
+    <button type="submit" onclick="alert('Hello World!')">Click me</button>
+    <button type="button">Submit</button>
+    <button type="reset">Reset</button>
+    <hr />
+    <br />
+    <strong>==========5. Select=========</strong>
+    <br />
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <hr />
+    <br />
+    <strong>==========6. Fieldset and Legend=========</strong>
+    <fieldset>
+      <legend>User Information</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" required/>
+      <label for="lname">last Name:</label>
+      <input type="text" id="lname"required />
+    </fieldset>
+
+    <br />
+    <hr />
+    <br />
+    <strong>==========7. Form=========</strong>
+    <form action="/">
+      <label for="name">Name:</label>
+      <input type="text" id="name"required />
+      <label for="email">Email:</label>
+      <input type="email" id="email"required />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

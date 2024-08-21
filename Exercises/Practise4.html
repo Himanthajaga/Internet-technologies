@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 400px">
+      <tr style="height: 50px">
+        <td colspan="4">Personal Information</td>
+      </tr>
+      <tr style="height: 50px">
+        <td>Name:</td>
+        <td colspan="3"><input type="text" /></td>
+      </tr>
+      <tr style="height: 50px">
+        <td>Age:</td>
+        <td colspan="3"><input type="text" /></td>
+      </tr>
+
+      <tr style="height: 50px">
+        <td rowspan="3">Address</td>
+        <td col>Street:</td>
+        <td colspan="2"><input type="text" /></td>
+      </tr>
+      <tr style="height: 50px">
+        <td>City:</td>
+        <td colspan="2"><input type="text" /></td>
+      </tr>
+      <tr style="height: 50px">
+        <td>Zip Code:</td>
+        <td colspan="2"><input type="text" /></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4">Additional Information</td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4"><textarea name="" rows="5" cols="50"></textarea></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4"><button>Submit</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
