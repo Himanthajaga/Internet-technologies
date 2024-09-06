@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Selectors</title>
+    <style>
+      /* element selector */
+      h2 {
+        color: rgb(165, 45, 101);
+      }
+      /* class selector */
+      .text {
+        color: blue;
+      }
+      /* class selector */
+      .heading {
+        color: green;
+      }
+      /* id selector */
+      #main-paragraph {
+        color: rgb(0, 121, 190);
+      }
+      /* attribute selector */
+      a[target="_blank"] {
+        color: rgb(77, 145, 92);
+      }
+      /* Descendant selector */
+      div p {
+        color: rgb(255, 158, 12);
+        font-style: italic;
+      }
+      /*child selector */
+      ul > li {
+        color: rgb(35, 196, 121);
+        list-style-type: square;
+      }
+      /* adjacent selector */
+      h2 + p {
+        color: rgb(0, 121, 190);
+      }
+      /* general sibling selector */
+      h1 ~ p {
+        color: rgb(34, 158, 81);
+      }
+      /* pseudo class selector */
+      li:first-child {
+        color: rgb(255, 0, 0);
+      }
+      li:last-child {
+        color: rgb(79, 12, 236);
+      }
+      li:nth-child(3) {
+        color: rgb(255, 0, 140);
+      }
+      li:nth-child(even) {
+        color: rgb(255, 0, 200);
+      }
+      li:nth-child(odd) {
+        color: rgb(68, 177, 101);
+      }
+      ul:hover {
+        background-color: rgb(125, 194, 196);
+      }
+      li:hover {
+        color: rgb(255, 255, 255);
+      }
+      /* pseudo element selector */
+      p::first-letter {
+        font-size: 50px;
+      }
+      p::first-line {
+        color: brown;
+      }
+      p::before {
+        content: "Before";
+        background-color: rgb(20, 220, 210);
+      }
+      p::after {
+        content: "After";
+        color: crimson;
+      }
+      /*  grouping selector */
+      h1,
+      h2,
+      h3 {
+        color: rgb(54, 41, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS-Selectors</h1>
+    <strong>==========1. Element Selector=========</strong>
+    <!-- targets all instaces of a spesific html element -->
+    <h2>Hellowww</h2>
+    <h3>meka rathuwenne na</h3>
+    <h2>Hellowww h2 hama ekama rathuwenawa</h2>
+
+    <strong>==========2. Class Selector=========</strong>
+    <!-- targets all instaces of a spesific class -->
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet
+      debitis excepturi veritatis amet iure minima mollitia tempora ea
+      explicabo.
+    </p>
+    <h3 class="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
+      perspiciatis voluptas veritatis dolores illo temporibus omnis perferendis,
+      dolore architecto?
+    </h3>
+    <p>
+      Lorem ipsumdolor
+      <span class="text">
+        sit amet consectetur adipisicing elit. Repudiandae, at totam aperiam </span
+      >voluptatum iure sapiente quidem beatae maiores praesentium nesciunt?
+    </p>
+    <h1 class="heading">heading</h1>
+    <h2 class="heading">heading</h2>
+    <h3 class="heading">heading</h3>
+    <h4 class="heading">heading</h4>
+    <h5 class="heading">heading</h5>
+    <h6 class="heading">heading</h6>
+    <strong>==========3. ID Selector=========</strong>
+    <!-- targets only one instance of a spesific html element -->
+    <p id="main-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+      perferendis?
+    </p>
+
+    <strong>==========4. Attribute Selector=========</strong>
+    <!-- targets all instaces of a spesific attribute -->
+    <a href="https://www.google.com" target="_blank"><br />Google</a>
+    <br />
+    <strong>==========5. Descendant Selector=========</strong>
+    <!-- targets elements that are nested within other elements -->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+        perferendis?
+      </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, illum!</p>
+
+    <strong>==========6. Child-Selector(>)=========</strong>
+    <!--  -->
+    <ul>
+      <li>java</li>
+      <li>python</li>
+      <li>php</li>
+      <li>c++</li>
+      <li>c</li>
+    </ul>
+    <strong>==========7. Adjacent Sibling Selector(+)=========</strong>
+    <!--  -->
+    <h2>Adjacent</h2>
+    <p>Hello one</p>
+    <p>Hello two</p>
+    <br />
+    <strong>==========8. General Sibling Selector(~)=========</strong>
+    <!--  -->
+    <h1>Sibling</h1>
+    <p>Hello 1</p>
+    <p>Hello 2</p>
+    <div>
+      <p>Not applied</p>
+    </div>
+    <strong>==========9. Pseudo-class-Selector=========</strong>
+    <!--  -->
+    <ul>
+      <li>java</li>
+      <li>python</li>
+      <li>php</li>
+      <li>c++</li>
+      <li>c</li>
+    </ul>
+
+    <br />
+    <strong>==========10. Pseudo-element-Selector=========</strong>
+    <!--  -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,</p>
+
+    <br />
+    <strong>==========11. Grouping-Selector(,)=========</strong>
+    <!--  -->
+    <h1>Grouping 1</h1>
+    <h2>Grouping 2</h2>
+    <h3>Grouping 3</h3>
+    <h4>Grouping 4</h4>
+    <h5>Grouping 5</h5>
+    <h6>Grouping 6</h6>
+  </body>
+</html>
