@@ -1,0 +1,64 @@
+h1{
+    color: red;
+    text-shadow: 1px 1px 5px #443232;
+    text-align: center;
+    line-height: 0;    
+}
+#name{
+    color: rgb(43, 223, 148);
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 0;
+    text-shadow: 5px 5px 5px #000000;
+
+}
+#modules{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-style: italic;
+    text-decoration: wavy;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 5px #ff0000;
+    
+}
+body{
+    background-image:url(/Assets/Images/pexels-wildlittlethingsphoto-6957653.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+
+    line-height: 1.6;
+    margin: 0;
+    padding: auto;
+}
+img{
+    width: 300;
+    height: 400;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+ol li :hover{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px #000000;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    font-size: 30px;
+}
