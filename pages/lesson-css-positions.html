@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-css-positions</title>
+    <style>
+      .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(119, 89, 190);
+        /* position: static; */
+        /* position: relative; */
+        /* top: 50px;
+        left: 50px; */
+        /* position: relative; */
+        /* position: fixed;
+        top: 0px;
+        right: 0px; */
+        position: sticky;
+        top: 0px;
+        right: 0px;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+
+        background-color: rgb(243, 200, 10);
+        /* position: relative;
+        top: 0px;
+        left: 0px; */
+
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <strong>======1. Static Position===== </strong>
+    <p>
+      The default position value is static. An element with position: static; is
+      not positioned in any special way; it is always positioned according to
+      the normal flow of the page.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum possimus
+      dolore maiores consequatur culpa consequuntur iure nihil distinctio
+      veritatis adipisci.
+    </p>
+    <strong>======2. Relative Position===== </strong>
+    <p>
+      An element with position: relative; is positioned relative to its normal
+      <br />
+      <strong>======3.Absolute Position===== </strong>
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus
+      excepturi accusamus nisi a natus itaque, illum voluptatibus eius sit
+      consequatur!
+    </p>
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed).
+    </p>
+
+    <div class="box1">
+      <div class="box2"></div>
+    </div>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta
+      blanditiis nostrum quidem beatae sunt maxime doloribus in temporibus
+      architecto.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptatibus
+      facilis distinctio vel, perspiciatis illum nostrum vero velit temporibus
+      accusantium.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veritatis
+      deserunt harum aperiam! Facere officiis praesentium perferendis
+      perspiciatis cumque dolores!
+    </p>
+
+    <strong>======4. Fixed Position=====</strong>
+    <p>
+      An element with position: fixed; is positioned relative to the viewport,
+      which means it always stays in the same place even if the page is scrolled
+  </body>
+</html>
