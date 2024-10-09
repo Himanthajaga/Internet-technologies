@@ -42,6 +42,7 @@ body{
   margin: 0;
 }
 img{
+    
     width: 300;
     height: 400;
     border: 5px solid #091e24;
@@ -59,6 +60,9 @@ ol li :hover{
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
+}
+.about > p{
+    color: rgb(0, 0, 0);
 }
 
 .box1{
@@ -104,15 +108,22 @@ li a:hover{
     background-color: rgb(0, 0, 0);
 }
 .container{
-    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+     
+    /* padding: 12px;  */
+    /* background-color: rgb(38, 118, 199); */ 
+     /* margin: 2%; */
+     flex-direction: row;
     display: flex;
-    
+     background-color : #ced65b;
     justify-content: space-between;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 5%;
-    background-color : #ced65b;
-    padding: auto;
+    margin-bottom: 5%; 
+  flex-wrap: wrap;
+     padding: auto; 
   
 }
 .module{

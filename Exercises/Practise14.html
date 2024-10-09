@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: aquamarine;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+        grid-gap: 10px;
+      }
+      .card {
+        background-color: white;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        /* width: 13vw;
+        height: 60vh;
+        margin: 10px; */
+      }
+      .card:hover {
+        box-shadow: 2px 2px 10px #000000;
+      }
+      img {
+        width: 100%;
+        height: 50%;
+        border-radius: 12px;
+      }
+      .type-price {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .btn {
+        color: white;
+        border-radius: 10px;
+        width: 14vw;
+        padding: 8px;
+        gap: 10px;
+        margin: 5px;
+      }
+      .btn1 {
+        width: 100%;
+        height: 50px;
+        background-color: navy;
+        color: white;
+        border-radius: 12px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+      .btn2 {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 12px;
+      }
+      .content {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .description {
+        width: 100%;
+        height: 100px;
+        overflow-y: scroll;
+      }
+      h1 {
+        text-align: center;
+      }
+      @media screen and (min-width: 0px) and (max-width: 575px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        h1 {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        .container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .container {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Products Gallery</h1>
+
+    <div class="container">
+      <div class="card card1">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card2">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card3">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card4">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card5">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card6">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card7">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+
+      <div class="card card8">
+        <img src="/Assets/Images/images (9).jpeg" alt="laptop image" />
+        <div class="type-price">
+          <p class="type content">Laptop</p>
+          <p class="price content">$500</p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod
+          nihil blanditiis pariatur ad ullam molestias libero fugiat magni
+          accusantium!
+        </p>
+        <button class="btn btn1">Buy Now</button>
+        <button class="btn btn2">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

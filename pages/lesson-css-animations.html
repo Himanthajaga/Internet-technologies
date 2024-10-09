@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-animations</title>
+    <style>
+.box{
+    /* margin: 20px; */
+    /* border-radius: 50%; */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(87, 54, 177);
+    border: 3px solid black;
+    animation: move-on-square 6s linear infinite 1s;
+
+/* 
+    animation-name: up-down;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-delay: 1s; */
+
+    /* animation: up-down 4s linear infinite 1s; */
+    /* animation: square 2s linear infinite 1s; */
+}
+/* @keyframes up-down {
+    0%{
+        transform: translateY(0);
+        background-color: rgb(0, 255, 21);
+        top: 0;
+    }
+    50%{
+        transform: translateY(300px);
+        background-color: rgb(255, 0, 0);
+        top: 300px;
+    }
+    100%{
+        transform: translateY(0);
+        background-color: rgb(223, 15, 153);
+        top: 0;
+    }
+} */
+/* 
+@keyframes square {
+    from{
+       background-color: azure;
+    }
+    to{
+        background-color: aqua;
+    }
+} */
+
+@keyframes move-on-square {
+    0%{
+        transform: translateX(0);
+    }
+   25%{
+       transform: translateX(300px);
+   }
+   50%{
+    transform: translateX(300px) translateY(300px);
+    
+   }
+   75%{
+    transform: translateX(0px) translateY(300px);
+    
+   }
+   100%{
+    
+    transform:translateY(0);
+   }
+}
+body{
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+       <img src="" alt="">
+    </div>
+</body>
+</html>
