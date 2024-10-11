@@ -61,8 +61,18 @@ ol li :hover{
     text-decoration: underline;
     text-align: center;
 }
-.about > p{
+.about{
     color: rgb(0, 0, 0);
+    text-align: center;
+    font-style:inherit;
+    text-decoration: wavy;
+    font-weight: 2rem;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 5px #ffffff;
+    font-size: 40px;
+    border: 4px solid #960471;
+    margin: 12px;
+
 }
 
 .box1{
@@ -92,7 +102,7 @@ ol li :hover{
     text-align: center;
 }
 header{
-    background-color: rgb(38, 118, 199);
+    background-color: rgb(129, 173, 218);
 }
 
 
