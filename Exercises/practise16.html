@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise 16</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: rgb(189, 233, 233);
+      }
+      .contact {
+        background-color: rgb(255, 255, 255);
+        width: 500px;
+        height: 560px;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        box-shadow: 1px 1px 10px #000000;
+        border-radius: 12px;
+      }
+      label {
+        padding: 10px;
+        text-align: left;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      input {
+        width: 450px;
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+      }
+      button {
+        border: none;
+        color: aliceblue;
+        margin-top: 10px;
+        width: 450px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: rgb(30, 228, 63);
+      }
+      textarea {
+        padding: 10px;
+        width: 450px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <p>If you need any help,please let us know</p>
+      <form action="">
+        <label id="Name" for="Name">Name:</label>
+        <input type="text" />
+
+        <label id="Email" for="Email">Email:</label>
+        <input type="email" />
+
+        <label id="Message" for="Message">Message:</label>
+        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
