@@ -11,3 +11,4 @@ function handleClick() {
 
 }
    
+// btn.removeEventListener('click',handleClick);
